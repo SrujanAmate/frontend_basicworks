@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All CSS Gradients</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px;
+        }
+    
+
+        .box {
+            width: 350px;
+            height: 190px;
+            border-radius: 10px;
+            border: 2px solid black;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* -------------------- LINEAR -------------------- */
+
+        /* 1. Only Colors */
+        .linear1 {
+            background: linear-gradient(red, yellow, green);
+        }
+
+        /* 2. Using Direction */
+        .linear2 {
+            background: linear-gradient(to right, red, yellow, green);
+        }
+
+        /* 3. Using Percentages */
+        .linear3 {
+            background: linear-gradient(to right,
+                red 0%,
+                red 33.33%,
+                yellow 33.33%,
+                yellow 66.66%,
+                green 66.66%,
+                green 100%);
+        }
+
+        /* -------------------- RADIAL -------------------- */
+
+        /* 1. Only Colors */
+        .radial1 {
+            background: radial-gradient(blue, yellow, powderblue);
+        }
+
+        /* 2. Circle Shape */
+        .radial2 {
+            background: radial-gradient(circle, blue, yellow, powderblue);
+        }
+
+        /* 3. Using Percentages */
+        .radial3 {
+            background: radial-gradient(circle,
+                blue 0%,
+                blue 33.33%,
+                yellow 33.33%,
+                yellow 66.66%,
+                powderblue 66.66%,
+                powderblue 100%);
+        }
+
+        /* -------------------- CONIC -------------------- */
+
+        /* 1. Basic Conic */
+        .conic1 {
+            background: conic-gradient(cyan, pink, orange);
+        }
+
+        /* 2. Starting Angle */
+        .conic2 {
+            background: conic-gradient(from 90deg, cyan, pink, orange);
+        }
+
+        /* 3. Using Percentages */
+        .conic3 {
+            background: conic-gradient(
+                cyan 0%,
+                cyan 33.33%,
+                pink 33.33%,
+                pink 66.66%,
+                orange 66.66%,
+                orange 100%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Linear -->
+    <div class="box linear1">Linear 1</div>
+    <div class="box linear2">Linear 2</div>
+    <div class="box linear3">Linear 3</div>
+
+    <!-- Radial -->
+    <div class="box radial1">Radial 1</div>
+    <div class="box radial2">Radial 2</div>
+    <div class="box radial3">Radial 3</div>
+
+    <!-- Conic -->
+    <div class="box conic1">Conic 1</div>
+    <div class="box conic2">Conic 2</div>
+    <div class="box conic3">Conic 3</div>
+
+</body>
+</html>
